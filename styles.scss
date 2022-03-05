@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+
+  form {
+    margin: 0 6px;
+  }
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.55, -0.4, 0.57, 1.8);
+  .user-entry {
+    width: 150px;
+    border: 2px solid gray;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 2px;
+    transition-duration: 0.3s;
+    ol {
+      margin-top: 0;
+    }
+  }
+}
+
+.hover {
+  transform: scale(1.1);
+}
+
+.shrink {
+  // transform: scale(4) rotate(45deg);
+  transform: scaleY(0) scaleX(4);
+
+  opacity: .6;
+}
